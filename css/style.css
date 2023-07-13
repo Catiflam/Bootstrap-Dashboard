@@ -1,0 +1,32 @@
+body {
+	height: 100vh;
+}
+
+.nav-link a {
+	padding: 4px;
+}
+
+.main {
+	height: calc(100% - 60px);
+	display: flex;
+}
+
+.sidebar {
+	background-color: blue;
+}
+
+.main-content {
+	flex-grow: 1;
+	background-color: orange;
+}
+
+.main-head {
+	background-color: blueviolet;
+}
+
+.box {
+	min-width: 200px;
+	min-height: 80px;
+	line-height: 80px;
+	border: 2px solid red;
+}
