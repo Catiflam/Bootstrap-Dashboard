@@ -13,6 +13,7 @@ body {
 
 .sidebar {
 	background-color: rgb(18, 18, 78);
+	width: 150px;
 }
 
 .main-content {
@@ -26,7 +27,7 @@ body {
 }
 
 .box {
-	min-width: 200px;
+	min-width: 150px;
 	min-height: 80px;
 	line-height: 80px;
 	border: 2px solid red;
@@ -43,4 +44,22 @@ body {
 
 .main .sidebar i {
 	font-size: 20px;
+}
+@media screen and (max-width: 786px) {
+	.sidebar {
+		width: 150px;
+	}
+
+	.main-content {
+		width: calc(100% - 150px);
+	}
+}
+@media screen and (max-width: 576px) {
+	.sidebar {
+		width: 80px;
+	}
+
+	.main-content {
+		width: calc(100% - 80px);
+	}
 }
