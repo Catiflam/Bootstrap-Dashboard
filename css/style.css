@@ -60,8 +60,13 @@ ul {
 .card-list table {
 	line-height: 40px;
 }
+.hide,
+.chek {
+	border-bottom: 1px solid lightgray;
+	width: 100%;
+}
 
-.bi-check-lg {
+.pointer {
 	cursor: pointer;
 }
 
