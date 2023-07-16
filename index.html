@@ -84,7 +84,7 @@
 							<span>Nuovo studente</span>
 							<button>+</button>
 						</div>
-						<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Button with data-bs-target</button>
+						<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddstudent" aria-controls="offcanvasAddstudent">Button with data-bs-target</button>
 					</div>
 				</header>
 				<!-- MIDDLE-CARD -->
@@ -325,15 +325,71 @@
 					</div>
 				</div>
 
-				<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddstudent" aria-labelledby="offcanvasAddstudentLabel">
 					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+						<h5 class="offcanvas-title" id="offcanvasAddstudentLabel">Inserisci un nuovo studente</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body">
-						<div>Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.</div>
+						<div class="container-fluid">
+							<div class="row g-3">
+								<div class="col-12 col-md-6">
+									<p>Nome</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12 col-md-6">
+									<p>Cognome</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12 col-md-6">
+									<p>Email</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12 col-md-6">
+									<p>Password</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12 col-md-6">
+									<p>Indirizzo Mail</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12 col-md-6">
+									Password
+									<div class="box short"></div>
+								</div>
+								<div class="col-12">
+									<p>Indirizzo</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12 col-md-6">
+									<p>Citta</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12 col-md-4">
+									<p>Stato</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12 col-md-2">
+									<p>Cap</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12">
+									<p>Foto</p>
+									<div class="box short"></div>
+								</div>
+								<div class="col-12">
+									<div class="box short"><input type="checkbox" /> Seleziona per proseguire</div>
+									<div class="col-12">
+										<div class="box">
+											<button>Salva</button>
+											<button>Svuota</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 						<div class="dropdown mt-3">
-							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Dropdown button</button>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
@@ -344,5 +400,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- JAVASCRIPT -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 	</body>
 </html>

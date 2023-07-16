@@ -19,6 +19,7 @@ body {
 .main-content {
 	flex-grow: 1;
 	background-color: white;
+	overflow: auto;
 }
 
 .main-head {
@@ -71,7 +72,18 @@ ul {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 786px) {
+.box.short {
+	min-height: 35px;
+	line-height: 35px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+.offcanvas.offcanvas-end {
+	width: 100%;
+}
+
+@media screen and (min-width: 786px) {
 	.sidebar {
 		width: 150px;
 	}
@@ -79,8 +91,12 @@ ul {
 	.main-content {
 		width: calc(100% - 150px);
 	}
+
+	.offcanvas.offcanvas-end {
+		width: 500px;
+	}
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
 	.sidebar {
 		width: 80px;
 	}
